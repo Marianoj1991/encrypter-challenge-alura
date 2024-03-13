@@ -1,0 +1,90 @@
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #F3F5FC;
+  font-family: 'Roboto', sans-serif;
+  padding: 3rem;
+}
+
+main {
+  height: 100%;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  padding: 10px 40px;
+}
+
+main .text-zone {
+  flex-grow: 2;
+  height: 1024px;
+}
+
+main .text-zone .text-zone__textarea {
+  height: 700px;
+  background-color: inherit;
+  border: none;
+  padding: 20px 5rem;
+  color: #0A3871;
+  outline: none;
+  font-size: 2rem;
+}
+
+main #text__button--encrypt {
+  background-color: #0A3871;
+  width: 328px;
+  border-radius: 24px;
+  padding: 24px;
+  color: #fff;
+  cursor: pointer;
+}
+
+main #text__button--desencrypt {
+  background-color: #D8DFE8;
+  width: 328px;
+  border-radius: 24px;
+  padding: 24px;
+  color: #0A3871;
+  border: none;
+  border: thin solid #0A3871;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+main .text-zone__encripted {
+  min-width: 300px;
+  padding: 30px;
+  border-radius: 20px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.text-zone__encripted .text-zone__encripted_child {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-zone__encripted .encripted-message {
+  font-size: 2rem;
+}
+
+.text-zone__encripted .button-copy {
+  display: block;
+  background-color: #D8DFE8;
+  width: 328px;
+  border-radius: 24px;
+  padding: 24px;
+  color: #0A3871;
+  border: none;
+  border: thin solid #0A3871;
+  cursor: pointer;
+}
+

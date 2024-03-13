@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <script
+      src="./main.js"
+      defer
+    ></script>
+    <link
+      rel="stylesheet"
+      href="./style.css"
+    />
+    <title>Proyecto Encriptador 🔒</title>
+  </head>
+  
+  <body>
+    <h1>Encrypter Challenge Project</h1>
+    <hr />
+    <main>
+      
+      <div class="text-zone">
+        <h1><img src="./assets/Logo.svg" alt="Logo Alura"></h1>
+        <form
+          class="text-zone__form"
+          id="text-zone__form-encrypt"
+        >
+           <textarea
+            placeholder="Insert text here"
+            name=""
+            id="encript-textarea"
+            cols="30"
+            rows="10"
+            class="text-zone__textarea"
+          ></textarea>
+          <p><img src="./assets/Advertencia.svg" alt="Advertencia svg"> Solo letras minusculas y sin acentos</p>
+          <button
+            class="text-zone__button"
+            id="text__button--encrypt"
+          >
+            Encrypt
+          </button>
+          <button
+            class="text-zone__button"
+            id="text__button--desencrypt"
+          >
+            Desencrypt
+          </button>
+        </form>
+      </div>
+
+      <div class="text-zone__encripted">
+
+        <p id='encripted-message'></p>
+        <div class='text-zone__encripted_child' id="text-zone__encripted_child">
+          <img src="./assets/Muñeco.svg" alt="Logo muñeco buscando">
+          <h4>Ningún mensaje fué encontrado</h4>
+          <p>Ingresa el texto que desees encriptar o desencriptar</p>
+        </div>
+        <button class="button-copy">Copy text</button>
+
+        <!-- <form
+          class="text-zone__form"
+          id="text-zone__form-desencrypt"
+        >
+          <textarea
+            class="text-zone__textarea"
+            cols="30"
+            rows="20"
+          ></textarea>
+          <button
+          class="text-zone__button" id="copy-text__button">Copy</button>
+        </form> -->
+      </div>
+
+    </main>
+    <footer>
+        &#169 Mariano Jimenez, 2024
+    </footer>
+  </body>
+</html>
